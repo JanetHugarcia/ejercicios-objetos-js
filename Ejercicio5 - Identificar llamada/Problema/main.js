@@ -10,9 +10,16 @@ for(var i=1;i<=n;i++){
 	//document.write(persona.nombre + " " + persona.telefono);
 	contacto.push(persona);
 }
-var llamada = prompt("Ingrese numero");
-
+var llamada = parseInt(prompt("Ingrese numero"));
+var j=0;
 for(var k in contacto){
-	document.write(contacto[k] + " " + contacto);
+	if(contacto[k].telefono === llamada){
+		alert( contacto[k].nombre + " te está llamando...");
+	}else{
+		j++;
+	}	
 }
-
+if(j==n){
+	alert( llamada + " quiere comunicarse contigo..");
+}
+	
