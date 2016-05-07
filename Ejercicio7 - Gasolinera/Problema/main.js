@@ -26,7 +26,6 @@ do{
 		}
 	}else{
 		alert("Pides más de lo que puedo dar");
-		break;
 	}
 		
 }while(bomba.cantidad>=0)
